@@ -46,16 +46,16 @@ $headers .= "From: update@blueraysecurity" . "\r\n";
 mail($toaddress, $subject, $mailcontent, $headers); 
 
 
-$sms_message= 'Dear '.$name.', You have just logged in to track your package with number: '.$tracking;
-$msg = str_replace(' ','+',$sms_message);
+// $sms_message= 'Dear '.$name.', You have just logged in to track your package with number: '.$tracking;
+// $msg = str_replace(' ','+',$sms_message);
 
-$telephone = str_replace(' ','',$phone);
-$telephone = str_replace('+','',$telephone);
-$tel = str_replace('-','',$telephone);
+// $telephone = str_replace(' ','',$phone);
+// $telephone = str_replace('+','',$telephone);
+// $tel = str_replace('-','',$telephone);
 
-$url = "https://www.bulksmsnigeria.com/api/v1/sms/create?api_token=x5xJTyRp0COZ23l3NtXLricfZjbKN1RYjDJbe6w28vcMX3rB4lAuIVZPHOhm&from=BlueRay&to=$tel&body=$msg";
+// $url = "https://www.bulksmsnigeria.com/api/v1/sms/create?api_token=x5xJTyRp0COZ23l3NtXLricfZjbKN1RYjDJbe6w28vcMX3rB4lAuIVZPHOhm&from=BlueRay&to=$tel&body=$msg";
 
-$f = @fopen($url, "r");
-$answer = fgets($f, 255);
+// $f = @fopen($url, "r");
+// $answer = fgets($f, 255);
 
 ?>
