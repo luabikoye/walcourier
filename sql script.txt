@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Dec 29, 2018 at 12:50 PM
+-- Server version: 5.7.23
+-- PHP Version: 5.6.38
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `bluekdhx_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `details`
+--
+
+DROP TABLE IF EXISTS `details`;
+CREATE TABLE IF NOT EXISTS `details` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `tracking` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL,
+  `fromN` varchar(100) DEFAULT NULL,
+  `destination` varchar(100) DEFAULT NULL,
+  `expected_date` date NOT NULL,
+  `expected_time` varchar(10) NOT NULL,
+  `delivery_date` varchar(100) NOT NULL,
+  `date` varchar(100) DEFAULT NULL,
+  `location` varchar(100) DEFAULT NULL,
+  `status` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `fname` varchar(30) DEFAULT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `postcode` varchar(100) DEFAULT NULL,
+  `country` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `tel` varchar(100) DEFAULT NULL,
+  `employet` varchar(100) DEFAULT NULL,
+  `username` varchar(100) DEFAULT NULL,
+  `password` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+COMMIT;
