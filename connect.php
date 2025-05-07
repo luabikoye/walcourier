@@ -1,5 +1,5 @@
 <?php
-@ $db = mysqli_connect('localhost', 'mccljxii_ijoba', 'certification231','mccljxii_ijoba');
+@ $db = mysqli_connect('wal-db.c3w2g26cei13.eu-north-1.rds.amazonaws.com', 'wal_db', 'Aledoy101','wal_db');
 
   if (!$db)
   {
